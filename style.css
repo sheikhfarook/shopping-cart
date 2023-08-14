@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+#clothing_head{
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+}
+
+#Accessories_head{
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+}
+ 
+:root{
+    --primary:#ffffff;
+    --dark: #009688;
+    --pure:#000000;
+    --medium:#6e6e6e;
+  }
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4%;
+}
+
+
+.product-price{
+    margin: 0px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+
+.product-name{
+    margin: 0px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--pure);
+}
+
+.product-brand{
+    margin: 0px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color:var(--dark);
+}
+
+.details{
+    padding-left: 10px;
+    margin: 10px auto;
+}
+
+.image{
+    width : 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card{
+    width: calc(20% - 20px);
+    margin: 30px 10px;
+    background-color:var(--primary);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+}
+
+.card:hover{
+    cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border-radius: 5px;
+	background-color: var(--primary);
+	box-shadow: 0 0px 9px 3px hsl(0deg 0% 0% / 50%);
+}
+
+@media (max-width : 600px){
+    .card{
+    width: calc(50% - 20px);
+    }
+}
+
+@media (min-width : 601px){
+    .card{
+    width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width : 901px){
+    .card{
+    width: calc(25% - 20px);
+    }
+}
+
+@media (min-width : 1050px){
+    .card{
+    width: calc(20% - 20px);
+    }
+} 
